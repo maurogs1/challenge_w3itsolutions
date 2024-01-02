@@ -21,7 +21,7 @@ Este README proporciona instrucciones detalladas sobre cómo iniciar el servidor
         git clone https://github.com/maurogs1/challenge_w3itsolutions.git
    <br>
        
-        cd tu-repositorio
+        cd challenge_w3itsolutions
 
 2. ⚙️ Configura las variables de Entorno <br>
     Crea un archivo  .env en la raíz de ./backend y establece las variables de entorno necesarias para la base de datos: <br>
@@ -101,7 +101,7 @@ Listo! El servidor debería estar funcionando ahora
         git clone https://github.com/maurogs1/challenge_w3itsolutions.git
    <br>
        
-        cd tu-repositorio
+        cd challenge_w3itsolutions
 
 2. ⚙️ Configura las Variables de Entorno
 
