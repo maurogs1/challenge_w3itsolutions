@@ -1,5 +1,6 @@
 # Hola! Este proyecto es parte del desafío de W3 IT SOLUTIONS y contiene dos formas de levantar el proyecto:
 
+
 1. [Levantar el proyecto con Docker en un entorno local](#levantar-con-docker)
 2. [Levantar el proyecto en un entorno local sin Docker](#levantar-el-servidor-sin-docker-)
 
@@ -142,7 +143,12 @@ Accede a la aplicación frontend en http://localhost:4200 y al backend en http:/
 ¡Listo! El servidor debería estar funcionando en tu entorno local!
 
 
+## Tecnologías Utilizadas
 
+- Backend: Typescript express 
+- Frontend: Angular Typescript Tailwindcss
+- Base de Datos: Mysql
+- Test: Jest
 
 
 
