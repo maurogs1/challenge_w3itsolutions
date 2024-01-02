@@ -18,7 +18,7 @@ Este README proporciona instrucciones detalladas sobre cómo iniciar el servidor
 
 1. 🔄 Clona el Repositorio
 
-        git clone https://tu-repositorio.git
+        git clone https://github.com/maurogs1/challenge_w3itsolutions.git
    <br>
        
         cd tu-repositorio
@@ -32,7 +32,7 @@ Este README proporciona instrucciones detalladas sobre cómo iniciar el servidor
         DB_NAME=dev_db
         DB_HOST=docker_db
 
-4. ⚙️ Configura el archivo ./backend/migrations/config/config.json
+3. ⚙️ Configura el archivo ./backend/migrations/config/config.json
     
     Abre el archivo ./backend/migrations/config/config.json y agrega la configuración correspondiente (por defecto está puesto para la configuración de docker)
    
@@ -46,7 +46,7 @@ Este README proporciona instrucciones detalladas sobre cómo iniciar el servidor
           }
         }
 
-5.  ▶️ Levanta los Servicios con Docker Compose <br>
+4.  ▶️ Levanta los Servicios con Docker Compose <br>
     Estando en la raiz del proyecto, ejecutar el siguiente comando:
     
         docker-compose up 
@@ -68,9 +68,16 @@ Este README proporciona instrucciones detalladas sobre cómo iniciar el servidor
 
 
  
-7. 🌐 Accede a la Aplicación
+5. 🌐 Accede a la Aplicación
    
 Accede a la aplicación frontend en http://localhost:4200 y al backend en http://localhost:8080.
+
+6. 🌐 Accede a la API de la aplicación
+   El proyecto está configurado con Swagger por lo que la documentación está dentro de
+
+        http://localhost:8080/api-docs/
+
+
 
 Listo! El servidor debería estar funcionando ahora
 
@@ -91,7 +98,7 @@ Listo! El servidor debería estar funcionando ahora
 
 1. 🔄 Clona el Repositorio
 
-        git clone https://tu-repositorio.git
+        git clone https://github.com/maurogs1/challenge_w3itsolutions.git
    <br>
        
         cd tu-repositorio
@@ -141,7 +148,7 @@ Crea un archivo  .env en la raíz de ./backend y establece las variables de ento
 
            npm run test
 
-6. ▶️ Inicia la Aplicación Frontend 🚀🚀🚀
+5. ▶️ Inicia la Aplicación Frontend 🚀🚀🚀
 
     Estando en la raíz del proyecto, ejecuta lo siguiente: 
 
@@ -156,9 +163,14 @@ Crea un archivo  .env en la raíz de ./backend y establece las variables de ento
            npm run test
    
 
-7. 🌐 Accede a la Aplicación
+6. 🌐 Accede a la Aplicación
 
 Accede a la aplicación frontend en http://localhost:4200 y al backend en http://localhost:8080.
+
+7. 🌐 Accede a la API de la aplicación
+   El proyecto está configurado con Swagger por lo que la documentación está dentro de
+
+           http://localhost:8080/api-docs/
 
         
 
@@ -168,7 +180,7 @@ Accede a la aplicación frontend en http://localhost:4200 y al backend en http:/
 
 ## Tecnologías Utilizadas
 
-- Backend: Nodejs Typescript express 
+- Backend: Nodejs Typescript express Swagger
 - Frontend: Angular Typescript Tailwindcss
 - Base de Datos: Mysql
 - Test: Jest
