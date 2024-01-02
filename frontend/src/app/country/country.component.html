@@ -1,0 +1,34 @@
+<div class="relative mt-4 flex gap-4 justify-end items-center my-3">
+    <div style="position: relative;">
+      <input
+      type="text"
+      name="search"
+      placeholder="Buscar por país"
+      autocomplete="off"
+      autofocus="true"
+      class="w-full border-green-500 border rounded-md shadow-sm focus:border-green-800 p-1 text-sm mr-8 focus:ring-2 focus:ring-green-600 focus:outline-none"
+      [(ngModel)]="search"
+      (keyup.enter)="searchCountries()"
+    />
+    
+        <img src="assets/images/lupita.svg" 
+        class="h-10 cursor-pointer" 
+        alt="Ícono de lupa" 
+        style="position: absolute; right:0; top: 50%; transform: translateY(-50%);"
+        (click)="searchCountries()"
+        
+        >
+    </div>
+ 
+</div>
+<app-countries-table [countriesList]="countriesList"></app-countries-table>
+
+<div
+  class="text-red-500 text-center w-full no-results"
+  *ngIf="countriesList.length == 0 && searching == false"
+  id="no-results"
+>
+  No se encontraron registros
+</div>
+
+<app-spinner [showSpinner]="searching"></app-spinner>
