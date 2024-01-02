@@ -145,7 +145,7 @@ Accede a la aplicación frontend en http://localhost:4200 y al backend en http:/
 
 ## Tecnologías Utilizadas
 
-- Backend: Typescript express 
+- Backend: Nodejs Typescript express 
 - Frontend: Angular Typescript Tailwindcss
 - Base de Datos: Mysql
 - Test: Jest
