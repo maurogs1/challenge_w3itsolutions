@@ -1,6 +1,5 @@
 # Hola! Este proyecto es parte del desafío de W3 IT SOLUTIONS y contiene dos formas de levantar el proyecto:
 
-
 1. [Levantar el proyecto con Docker en un entorno local](#levantar-con-docker)
 2. [Levantar el proyecto en un entorno local sin Docker](#levantar-el-servidor-sin-docker-)
 
@@ -52,11 +51,22 @@ Este README proporciona instrucciones detalladas sobre cómo iniciar el servidor
     
         docker-compose up 
 
-    ⚠️Si el backend no puede levantar a la primera⚠️
+    ⚠️Si el backend no puede levantar a la primera⚠️ (ejecutar primero backend para cargar los datos de migrations)
+    ⚠️Si el backend_test no puede levantar a la primera⚠️
+    ⚠️Si el frontend_test no puede levantar a la primera⚠️️
 
-     Esperar a que levante primero 'docker_db' y volver a levantar solo el backend, esto se debe a que el backend no puede conectarse a la base de datos mientras mysql aún está cargando. 😅😅
+     Esperar a que levante primero 'docker_db' y volver a levantar por separado a "backend, backend_test y frontend_test", esto se debe a que el backend no puede conectarse a la base de datos mientras mysql aún está cargando. 😅😅
+     Si se hace desde consola y no por docker desktop, se puede usar los siguientes comandos para levantar unicamente los que fallaron:
+
+        docker-compose up  backend
+        docker-compose up  test_backend
+        docker-compose up  test_frontend
+
+
+
+
  
-6. 🌐 Accede a la Aplicación
+7. 🌐 Accede a la Aplicación
    
 Accede a la aplicación frontend en http://localhost:4200 y al backend en http://localhost:8080.
 
@@ -125,8 +135,11 @@ Crea un archivo  .env en la raíz de ./backend y establece las variables de ento
             cd ..
         
             npm start
+   Para ejecutar las pruebas unitarias
 
-5. ▶️ Inicia la Aplicación Frontend 🚀🚀🚀
+           npm run test
+
+6. ▶️ Inicia la Aplicación Frontend 🚀🚀🚀
 
     Estando en la raíz del proyecto, ejecuta lo siguiente: 
 
@@ -135,12 +148,20 @@ Crea un archivo  .env en la raíz de ./backend y establece las variables de ento
             npm install
             
             npm start
+   
+   Para ejecutar las pruebas unitarias:
 
-6. 🌐 Accede a la Aplicación
+           npm run test
+   
+
+7. 🌐 Accede a la Aplicación
 
 Accede a la aplicación frontend en http://localhost:4200 y al backend en http://localhost:8080.
 
+        
+
 ¡Listo! El servidor debería estar funcionando en tu entorno local!
+
 
 
 ## Tecnologías Utilizadas
