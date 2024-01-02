@@ -52,7 +52,9 @@ Este README proporciona instrucciones detalladas sobre cómo iniciar el servidor
         docker-compose up 
 
     ⚠️Si el backend no puede levantar a la primera⚠️ (ejecutar primero backend para cargar los datos de migrations)
+    
     ⚠️Si el backend_test no puede levantar a la primera⚠️
+    
     ⚠️Si el frontend_test no puede levantar a la primera⚠️️
 
      Esperar a que levante primero 'docker_db' y volver a levantar por separado a "backend, backend_test y frontend_test", esto se debe a que el backend no puede conectarse a la base de datos mientras mysql aún está cargando. 😅😅
